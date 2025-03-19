@@ -1,42 +1,99 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Mockup Sayfası</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
+    <title>WebStudio</title>
 </head>
 <body>
-    <header>
-        <h1>Mockup Başlığı</h1>
-        <button id="menu-toggle">Menü</button>
-    </header>
-    <nav id="mobile-menu" class="hidden">
-        <ul>
-            <li><a href="#section1">Bölüm 1</a></li>
-            <li><a href="#section2">Bölüm 2</a></li>
-            <li><a href="#section3">Bölüm 3</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="section1">
-            <h2>İçerik Başlığı 1</h2>
-            <p>Bu, mockup'tan alınmış bir içerik örneğidir.</p>
-            <img src="mockup-image.jpg" alt="Mockup Görseli" />
-        </section>
-        <section id="section2">
-            <h2>İçerik Başlığı 2</h2>
-            <p>Bu, mockup'tan alınmış bir içerik örneğidir.</p>
-        </section>
-        <section id="section3">
-            <h2>İçerik Başlığı 3</h2>
-            <p>Bu, mockup'tan alınmış bir içerik örneğidir.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Telif Hakkı © 2023</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container header-container">
+            <nav class="menu-nav">
+                <a href="./index.html" class="header-logo">Web<span class="header_logo_second">Studio</span></a>
+                <ul class="menu">
+                    <li class="menu-list-item">
+                        <a href="./index.html" class="menu-list">Studio</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#" class="menu-list">Portfolio</a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="#" class="menu-list">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="contact_information">
+                <ul class="contact">
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="contact_list">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+110001111111" class="contact_list">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+            <button type="button" class="mobile-btn-open" aria-label="Open mobile menu">
+                <svg class="mobile-svg-close" width="24" height="24">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-container">
+            <div class="mobile-button">
+                <button type="button" class="mobile-btn-close" aria-label="Close mobile menu">
+                    <svg class="mobile-svg-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-list-item"><a href="#">Studio</a></li>
+                    <li class="mobile-menu-list-item"><a href="#">Portfolio</a></li>
+                    <li class="mobile-menu-list-item"><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="mobile-address">
+                <ul class="mobile-contact">
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="mobile-contact-list-link">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+110001111111" class="mobile-contact-list-link">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social-list">
+                    <li class="mobile-social-list-item">
+                        <a href="#" class="mobile-social-link" aria-label="Instagram">
+                            <svg width="16" height="16" class="social-svg">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-list-item">
+                        <a href="#" class="mobile-social-link" aria-label="Twitter">
+                            <svg width="16" height="16" class="social-svg">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-list-item">
+                        <a href="#" class="mobile-social-link" aria-label="Facebook">
+                            <svg width="16" height="16" class="social-svg">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-list-item">
+                        <a href="#" class="mobile-social-link" aria-label="LinkedIn">
+                            <svg width="16" height="16" class="social-svg">
+                                <use href="./images/icons.svg
